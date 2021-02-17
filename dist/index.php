@@ -30,13 +30,13 @@
     <nav>
     <div id="login">
 <?php  if (isset($_SESSION['username'])) : ?>
-    	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-    	<p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
+    Welcome <strong><?php echo $_SESSION['username']; ?></strong>
+    	<a class="logout" href="index.php?logout='1'">logout</a>
 <?php endif ?>
 
     </div>
         <ul>
-            <li><a href="index.php">Home</a><li>
+            <li><a href="insert/index.php">Plaats bericht</a><li>
             <li><a href="index.php">Home</a><li>
             <li><a href="index.php">Home</a><li>
             <li><a href="index.php">Admin</a><li>
